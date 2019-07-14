@@ -30,7 +30,7 @@ def can_be_created_in_a_block(args = nil)
   # release_date == 1990
 
   Movie.create do |m|
-    m.new(args)
+    m.save(args)
   end
 end
 
